@@ -4,8 +4,7 @@
 
 | Campo | Informação |
 | :--- | :--- |
-| **Equipe** | [Nome da Equipe, se aplicável] |
-| **Integrantes** | Cauê Augusto Silva, [Adicionar demais integrantes] |
+| **Integrantes** | Cauê Augusto, Gabriel de Oliveira e Marcelo Silva |
 | **Tema / Contexto da Solução** | Sistema Web/App de Vitrine Digital, Encomendas e Gestão Comercial para a Cantina Solidária do IFRJ (Campus Niterói) |
 | **Repositório Git** | https://github.com/CaueAugustoSilva/SistemaDeCantinaSolidaria |
 | **Wiki de Planejamento e Documentação** | https://github.com/CaueAugustoSilva/SistemaDeCantinaSolidaria/wiki |
