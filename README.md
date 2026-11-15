@@ -31,7 +31,7 @@ Para solucionar esse problema, este projeto propõe o desenvolvimento de um **Si
 ## Tecnologias usadas
 
 * **Front-end:** React
-* **Back-end:** Python ou Next.js
+* **Back-end:** Python 
 * **Versionamento e Gestão:** Git e GitHub
 
 ---
