@@ -50,6 +50,6 @@ Os diretórios do projeto estão divididos da seguinte forma:
 
 ## Links importantes
 
-* [Documentação Técnica](https://github.com/CaueAugustoSilva/SistemaDeCantinaSolidaria/blob/main/docs/documenta_o_t_cnica_cantina_solid_ria_ifrj.md)
+* [Documentação Técnica](https://github.com/CaueAugustoSilva/SistemaDeCantinaSolidaria/blob/main/docs/Documentacao_Tecnica_Cantina_Solidaria_IFRJ.md)
 * [Wiki do Projeto](https://github.com/CaueAugustoSilva/SistemaDeCantinaSolidaria/wiki)
 * [Quadro de Acompanhamento (Kanban)](https://github.com/users/CaueAugustoSilva/projects/1)
