@@ -1,4 +1,4 @@
-# Especificação Detalhada de Requisitos — Cantina Solidária do IFRJ
+[# Especificação Detalhada de Requisitos — Cantina Solidária do IFRJ
 
 **Equipe:** Equipe Cão — Marcelo Oliveira, Cauê Augusto e Gabriel Pires  
 **Projeto:** Sistema Web/App da Cantina Solidária do IFRJ — Campus Niterói  
@@ -364,3 +364,4 @@ A revisão **não identificou necessidade de renumerar, incluir ou excluir requi
 | Versão | Data | Alteração |
 | :--- | :--- | :--- |
 | 1.0 | 22/11/2026 | Revisão dos requisitos do MVP; elaboração de HU01–HU18, critérios de aceitação, CDU01–CDU02, verificação de RNF e matriz de rastreabilidade. |
+](https://share.gemini.google/G5TLzyCd7Npz)
