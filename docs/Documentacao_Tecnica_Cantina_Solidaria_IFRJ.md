@@ -103,7 +103,7 @@ Os requisitos a seguir delimitam o MVP (módulos M1 a M8, prioridade P1) e foram
 | **RF11** | O sistema deve permitir que o Comprador consulte seu histórico de pedidos e acompanhe, no próprio sistema, as alterações de situação de cada pedido (aceite, recusa, preparo, disponibilidade para retirada, entrega ou cancelamento). |
 | **RF12** | O sistema deve exibir ao Vendedor um resumo gerencial simples contendo o total de pedidos por situação, a quantidade de vendas concluídas e a receita registrada. |
 | **RF13** | O sistema deve disponibilizar uma seção para consulta das regras de participação e orientações gerais da Cantina Solidária, gerenciável pelo Administrador Geral. |
-| **RF14** | O sistema deve permitir que o Vendedor mantenha seu perfil de vendedor (apresentação, turnos habituais no campus e, opcionalmente, chave Pix a ser informada ao comprador). |
+| **RF14** | O sistema deve permitir que o usuário ative o perfil de vendedor a qualquer momento (caso tenha se cadastrado inicialmente apenas como comprador) e mantenha seus dados comerciais (apresentação, turnos habituais no campus e, opcionalmente, chave Pix a ser informada ao comprador). |
 | **RF15** | O sistema deve permitir que o Administrador Geral consulte os usuários cadastrados e suspenda ou reative contas. |
 
 ---
@@ -140,7 +140,7 @@ Os requisitos a seguir delimitam o MVP (módulos M1 a M8, prioridade P1) e foram
 | **RN09** | **Vitrine restrita a datas vigentes e itens disponíveis:** a vitrine exibe apenas produtos ativos com oferta cadastrada para a data atual ou para datas futuras. Itens esgotados permanecem visíveis e sinalizados; itens esgotados, pausados ou sem oferta na data de retirada escolhida não podem ser incluídos em novos pedidos. | RF03, RF04, RF05, RF06 |
 | **RN10** | **Encomenda para data futura:** pedidos para retirada em data futura só são permitidos para produtos marcados como “aceita encomenda”; os demais só podem ser pedidos para retirada no próprio dia da oferta. | RF02, RF06 |
 | **RN11** | **Cálculo do valor do pedido:** o subtotal de cada item é a quantidade multiplicada pelo preço unitário registrado no pedido, e o valor total é a soma dos subtotais. A quantidade de cada item deve ser um número inteiro maior ou igual a 1. | RF06 |
-| **RN12** | **Contas e perfis:** o Administrador Geral é previamente cadastrado, não havendo autocadastro nesse perfil. Apenas usuários com perfil de vendedor publicam produtos e atendem pedidos. Contas suspensas não acessam o sistema, e seus registros históricos são preservados. | RF01, RF14, RF15 |
+| **RN12** | **Contas, perfis duplos e restrição de autocompra:** o Administrador Geral é previamente cadastrado, não havendo autocadastro nesse perfil. Usuários podem acumular os papéis de Comprador e Vendedor simultaneamente (ativando o perfil comercial no cadastro ou posteriormente), alternando entre as visões na interface. Contudo, um usuário com papel duplo não pode realizar pedidos para os próprios produtos (comprador_id ≠ vendedor.usuario_id). Contas suspensas não acessam o sistema, e seus registros históricos são preservados. | RF01, RF14, RF15 |
 
 ---
 
