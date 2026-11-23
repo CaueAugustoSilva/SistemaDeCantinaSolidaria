@@ -1,4 +1,4 @@
-# Especificação Detalhada de Requisitos — Cantina Solidária do IFRJ
+# Especificação de Requisitos — Cantina Solidária do IFRJ
 
 **Equipe:** Equipe Cão — Marcelo Oliveira, Cauê Augusto e Gabriel Pires  
 **Projeto:** Sistema Web/App da Cantina Solidária do IFRJ — Campus Niterói  
