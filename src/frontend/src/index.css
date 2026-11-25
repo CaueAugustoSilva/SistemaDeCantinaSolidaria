@@ -1,0 +1,197 @@
+:root {
+  --ifrj-verde: #2F9E41;
+  --ifrj-verde-escuro: #1E6B2B; /* Contraste > 5.5:1 com branco (RNF08) */
+  --ifrj-verde-claro: #E8F5EB;
+  --ifrj-vermelho: #CD191E;
+  --bg-app: #F5F7F6;
+  --bg-card: #FFFFFF;
+  --texto-principal: #1A1D1B;
+  --texto-secundario: #525B56;
+  --borda-suave: #E0E5E2;
+  --sombra-card: 0 4px 14px rgba(0, 0, 0, 0.06);
+  --raio-card: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--texto-principal);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container estilo App Mobile-First que expande no Desktop (RNF01) */
+.app-shell {
+  max-width: 680px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--bg-app);
+  padding-bottom: 32px;
+}
+
+/* Banner estilo Loja 99Food no topo */
+.store-banner {
+  background: linear-gradient(135deg, var(--ifrj-verde-escuro) 0%, var(--ifrj-verde) 100%);
+  color: #FFFFFF;
+  padding: 20px 16px 44px 16px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.store-banner-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.badge-campus {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-dot-red {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--ifrj-vermelho);
+  border: 1.5px solid #FFFFFF;
+}
+
+/* Cartão sobreposto ao banner (assinatura visual 99Food) */
+.card-99 {
+  background: var(--bg-card);
+  border-radius: var(--raio-card);
+  box-shadow: var(--sombra-card);
+  padding: 18px;
+  margin: -28px 16px 16px 16px;
+  border: 1px solid var(--borda-suave);
+}
+
+.card-section {
+  background: var(--bg-card);
+  border-radius: var(--raio-card);
+  box-shadow: var(--sombra-card);
+  padding: 18px;
+  margin: 0 16px 16px 16px;
+  border: 1px solid var(--borda-suave);
+}
+
+/* Formulários acessíveis (RNF08) */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--texto-principal);
+  margin-bottom: 6px;
+}
+
+.form-hint {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--texto-secundario);
+  margin-top: 4px;
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--borda-suave);
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: var(--texto-principal);
+  background-color: #FFFFFF;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+  border-color: var(--ifrj-verde-escuro);
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--ifrj-verde-escuro);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #165220;
+}
+
+.btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Chips de seleção rápida para Turnos Habituais */
+.chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.chip {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--borda-suave);
+  background: #FFFFFF;
+  color: var(--texto-secundario);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.chip.active {
+  background: var(--ifrj-verde-claro);
+  border-color: var(--ifrj-verde-escuro);
+  color: var(--ifrj-verde-escuro);
+}
+
+.alert-box {
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.alert-success {
+  background-color: var(--ifrj-verde-claro);
+  color: var(--ifrj-verde-escuro);
+  border: 1px solid #B7DFC0;
+}
+
+.alert-error {
+  background-color: #FDECEA;
+  color: #9E1418;
+  border: 1px solid #F5C2C4;
+}
