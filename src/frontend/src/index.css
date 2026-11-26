@@ -195,3 +195,135 @@ body {
   color: #9E1418;
   border: 1px solid #F5C2C4;
 }
+
+/* Abas de alternância Login / Cadastro */
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #EAEFEA;
+  padding: 4px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+.auth-tab {
+  padding: 10px;
+  border: none;
+  border-radius: 9px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: transparent;
+  color: var(--texto-secundario);
+  transition: all 0.2s;
+}
+
+.auth-tab.active {
+  background-color: #FFFFFF;
+  color: var(--ifrj-verde-escuro);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Cards de seleção de Papel (Comprador / Vendedor / Ambos) */
+.role-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+@media (min-width: 480px) {
+  .role-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.role-card {
+  padding: 12px 10px;
+  border: 1.5px solid var(--borda-suave);
+  border-radius: 12px;
+  background: #FFFFFF;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.role-card.active {
+  border-color: var(--ifrj-verde-escuro);
+  background-color: var(--ifrj-verde-claro);
+}
+
+.role-card-title {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--texto-principal);
+}
+
+.role-card.active .role-card-title {
+  color: var(--ifrj-verde-escuro);
+}
+
+.role-card-desc {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--texto-secundario);
+  margin-top: 2px;
+}
+
+.form-select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--borda-suave);
+  border-radius: 12px;
+  font-size: 0.95rem;
+  color: var(--texto-principal);
+  background-color: #FFFFFF;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: var(--ifrj-verde-escuro);
+}
+
+/* Barra de Navegação Adaptativa estilo App Mobile (99Food) */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 680px;
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--borda-suave);
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 12px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+  z-index: 50;
+}
+
+.nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 6px;
+  border: none;
+  background: transparent;
+  color: var(--texto-secundario);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.nav-item.active {
+  color: var(--ifrj-verde-escuro);
+  background-color: var(--ifrj-verde-claro);
+}
+
+.app-shell-with-nav {
+  padding-bottom: 84px;
+}

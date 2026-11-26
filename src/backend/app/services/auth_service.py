@@ -42,3 +42,11 @@ def obter_usuario_atual(credentials: HTTPAuthorizationCredentials = Depends(secu
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Não foi possível autenticar as credenciais."
         )
+
+def exigir_vendedor(usuario: dict = Depends(obter_usuario_atual)) -> dict:
+    if usuario.get("papel") not in ("vendedor", "ambos"):
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Acesso negado: apenas usuários com perfil de vendedor podem realizar esta operação."
+        )
+    return usuario
