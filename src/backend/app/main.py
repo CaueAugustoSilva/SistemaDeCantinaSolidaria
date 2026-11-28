@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.controllers import usuario_controller
-from app.controllers import vendedor_controller
+from app.controllers import usuario_controller, vendedor_controller, produto_controller
 
 app = FastAPI(
     title="API Cantina Solidária IFRJ",
@@ -20,6 +19,7 @@ app.add_middleware(
 
 app.include_router(usuario_controller.router)
 app.include_router(vendedor_controller.router)
+app.include_router(produto_controller.router)
 
 @app.get("/")
 def health_check():
