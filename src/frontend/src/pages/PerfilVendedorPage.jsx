@@ -23,7 +23,7 @@ export default function PerfilVendedorPage({ usuario, onAtualizarUsuario }) {
 
     async function carregarPerfil() {
       try {
-        const dados = await apiRequest('/vendedores/meu-perfil');
+        const dados = await apiRequest('/vendedores/perfil');
         setPerfil(dados);
         setApresentacao(dados.apresentacao || '');
         setChavePix(dados.chave_pix || '');
@@ -77,7 +77,7 @@ export default function PerfilVendedorPage({ usuario, onAtualizarUsuario }) {
         chave_pix: chavePix.trim() || null, // Opcional no MVP (HU03 - Critério 2)
       };
 
-      const atualizado = await apiRequest('/vendedores/meu-perfil', {
+      const atualizado = await apiRequest('/vendedores/perfil', {
         method: 'PUT',
         body: JSON.stringify(payload),
       });
